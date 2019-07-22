@@ -16,14 +16,68 @@ class MainRouter extends Group
     {
         $this->setPaths([
             'namespaces' => 'Application\\Controllers',
-            'controller'=>'index'
+            'controller'=>'barang'
         ]);
 
         $this->add(
             '/',
             [
-                'action' => 'helloworld'
+                'action' => 'index'
             ]
         );
+
+        $this->add(
+            '/barang/index',
+            [
+                'action' => 'index'
+            ]
+        );
+
+        $this->add(
+            '/barang/show',
+            [
+                'action' => 'show'
+            ]
+        );
+
+        $this->add(
+            '/barang/add',
+            [
+                'action' => 'add'
+            ]
+        );
+
+        $this->add(
+            '/barang/create',
+            [
+                'action' => 'create'
+            ]
+        );
+
+        $this->add(
+            '/barang/save',
+            [
+                'action' => 'save'
+            ]
+        );
+
+        $this->add(
+            '/barang/delete/:params',
+            [
+                'action' => 'delete',
+                'params' => 1,
+            ]
+        );
+
+        $this->add(
+            '/barang/edit/:params',
+            [
+                'action' => 'edit',
+                'params' => 1,
+            ]
+        );
+
+
+        
     }
 }

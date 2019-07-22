@@ -8,10 +8,10 @@ return [
 		'mysql' => [
 			'adapter'  => 'Mysql',
 			'host'     => env( 'DATABASE_HOST', '127.0.0.1' ),
-			'dbname'   => env( 'DATABASE_NAME', 'application' ),
+			'dbname'   => env( 'DATABASE_NAME', 'inventory' ),
 			'port'     => env( 'DATABASE_PORT', 3306 ),
-			'username' => env( 'DATABASE_USER', 'application' ),
-			'password' => env( 'DATABASE_PASS', 'secret' ),
+			'username' => env( 'DATABASE_USER', 'root' ),
+			'password' => env( 'DATABASE_PASS', '' ),
 			'charset'  => env( 'DATABASE_CHARSET', 'utf8mb4' ),
 		],
 

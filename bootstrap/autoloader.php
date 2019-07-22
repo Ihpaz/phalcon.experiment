@@ -1,13 +1,23 @@
 <?php
 
 use Dotenv\Dotenv;
+use Application\Adapters\Logger\Sentry;
 
 define( 'BASE_DIR', dirname( __DIR__ ) . DIRECTORY_SEPARATOR );
+include BASE_DIR . 'app/forms/BarangForm.php';
+include BASE_DIR . 'app/models/Barang.php';
+include BASE_DIR . 'app/controllers/ControllerBase.php';
+include BASE_DIR . 'app/controllers/BarangController.php';
 // Include Composer autoloader
 include BASE_DIR . 'vendor/autoload.php';
 // Load environment variables
+
+
 $dotenv = new Dotenv( realpath( BASE_DIR ) );
 $dotenv->load();
+
+
+
 /**
  * @const ENV_PRODUCTION Application production stage
  */

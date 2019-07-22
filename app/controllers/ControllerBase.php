@@ -130,4 +130,6 @@ class ControllerBase extends Controller {
 
 	protected function addAccessLogs( $data, $uuid = 1, $ruid = 1, $type = 'INFO' ) {
 	}
+
+	
 }

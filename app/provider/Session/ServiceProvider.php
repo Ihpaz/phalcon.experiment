@@ -5,6 +5,7 @@ namespace Application\Provider\Session;
 
 use Application\Provider\AbstractServiceProvider;
 
+
 /**
  * Application\Provider\Session\ServiceProvider
  *
@@ -39,6 +40,7 @@ class ServiceProvider extends AbstractServiceProvider
                 ];
 
                 /** @var \Phalcon\Session\AdapterInterface $session */
+             
                 $session = new $adapter(array_merge($driver->toArray(), $defaults));
                 $session->start();
 

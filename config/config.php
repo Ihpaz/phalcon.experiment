@@ -20,6 +20,7 @@ return new \Phalcon\Config( [
 		'migrationsDir'      => BASE_DIR . 'app/migrations/',
 		'viewsDir'           => BASE_DIR . 'app/views/',
 		'libraryDir'         => BASE_DIR . 'app/library/',
+		'formsDir'       	 => BASE_DIR . 'app/forms/',
 		'cacheDir'           => cache_path(),
 		'baseUri'            => env( 'BASE_URI' ),
 		'staticBaseUri'      => env( 'STATIC_BASE_URI' ),

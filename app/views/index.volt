@@ -1,10 +1,29 @@
-<!DOCTYPE html>
+
 <html>
 <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
 
-</head>
+        
+
+        <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        {{ stylesheet_link('/assets/css/bootstrap.css') }}
+
+        {{ stylesheet_link('/assets/css/bootstrap.min.css') }}
+
+        {{ stylesheet_link('/assets/css/dataTables.bootstrap.css') }}
+
+        {{ stylesheet_link('/assets/css/dataTables.bootstrap.css') }}
+
+        {{ stylesheet_link('/assets/css/font-awesome.min.css') }}
+
+        {{ stylesheet_link('/assets/css/font-awesome.css') }}
+        
+        {{ javascript_include("/assets/js/datatables.js") }}
+    </head>
 <body>
 <div class="wrapper">
+    
     {{ content() }}
 </div>
 {% if sentry_dsn is defined %}
